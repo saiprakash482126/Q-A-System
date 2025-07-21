@@ -42,18 +42,7 @@ AI Data Frameworks,docs.llamaindex.ai,LlamaIndex documentation for building LLM-
 
 **Pro Tip:** The description is crucial - it's what the agent uses to decide whether a particular site will be helpful for answering a user's question. Be specific about what topics and types of information each site covers.
 
-### Obtaining API Keys
-
-#### Getting a Tavily API Key:
-1. Go to [tavily.com](https://tavily.com) and sign up for a free account
-2. Navigate to your dashboard or API section
-3. Find your API key in the dashboard
-4. Tavily offers a generous free tier with thousands of searches per month
-
-#### Getting a Google API Key:
-1. Visit [ai.google.dev](https://ai.google.dev) (Google AI Studio)
-2. Sign in with your Google account
-3. Click "Get API Key" or navigate to the API keys section
+ API Key" or navigate to the API keys section
 4. Create a new project if needed
 5. Generate your API key
 6. Google's Gemini API includes a substantial free tier
@@ -62,42 +51,6 @@ After obtaining both keys, add them to your `.env` file:
 ```bash
 TAVILY_API_KEY=your_tavily_key_here
 GOOGLE_API_KEY=your_google_key_here
-```
-
-**Security Note:** Keep these keys secure and never commit them to public repositories. Both services offer excellent free tiers suitable for development and small-scale production use.
-
-
-### Option 1: Using Make (Recommended)
-
-```bash
-# Clone the repository
-git clone https://github.com/javiramos1/qagent.git
-cd qagent
-
-# Setup environment and install dependencies
-make install
-
-# Copy and configure environment variables
-cp .env.example .env
-# Edit .env with your API keys
-
-# Run the application
-make run
-```
-
-### Option 2: Using Docker
-
-```bash
-# Clone the repository
-git clone https://github.com/javiramos1/qagent.git
-cd qagent
-
-# Copy and configure environment variables
-cp .env.example .env
-# Edit .env with your API keys
-
-# Run with Docker Compose
-make docker-run
 ```
 
 ## 🔧 Configuration
